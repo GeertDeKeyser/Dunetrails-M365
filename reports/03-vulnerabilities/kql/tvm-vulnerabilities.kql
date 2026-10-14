@@ -1,0 +1,5 @@
+// Defender XDR - Advanced hunting - export as Tvm-Vulnerabilities.csv
+// Note: DeviceTvm* tables are snapshot tables (no Timestamp column).
+DeviceTvmSoftwareVulnerabilities
+| project DeviceId, AadDeviceId, DeviceName, OSPlatform, OSVersion,
+          SoftwareVendor, SoftwareName, SoftwareVersion, CveId, VulnerabilitySeverityLevel

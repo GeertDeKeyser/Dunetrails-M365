@@ -1,0 +1,5 @@
+// Defender XDR - Advanced hunting - export as Defender-Devices.csv
+DeviceInfo
+| where Timestamp > ago(30d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| project Timestamp, DeviceId, DeviceName, OSPlatform, OSVersion, PublicIP, OnboardingStatus, HealthStatus, RiskLevel

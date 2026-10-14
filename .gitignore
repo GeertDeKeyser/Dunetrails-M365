@@ -1,0 +1,4 @@
+# Report output & run data
+*.csv
+*.log
+*.zip

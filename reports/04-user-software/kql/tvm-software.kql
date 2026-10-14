@@ -1,0 +1,5 @@
+// Defender XDR - Advanced hunting - export as Tvm-Software.csv
+// Note: DeviceTvm* tables are snapshot tables (no Timestamp column).
+DeviceTvmSoftwareInventory
+| project DeviceId, AadDeviceId, DeviceName, OSPlatform, OSVersion,
+          SoftwareVendor, SoftwareName, SoftwareVersion, EndOfSupportStatus
