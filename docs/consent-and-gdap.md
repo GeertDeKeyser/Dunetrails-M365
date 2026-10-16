@@ -10,7 +10,7 @@ A customer tenant admin (Global Admin / Cloud Application Admin / Application Ad
 
 ```powershell
 Install-Module Microsoft.Graph.Authentication -Scope CurrentUser
-Connect-MgGraph -TenantId <customer-tenant-id> -Scopes "User.Read.All","Directory.Read.All","AuditLog.Read.All","DeviceManagementManagedDevices.Read.All" -NoWelcome
+Connect-MgGraph -TenantId <customer-tenant-id> -UseDeviceAuthentication -Scopes "User.Read.All","Directory.Read.All","AuditLog.Read.All","DeviceManagementManagedDevices.Read.All" -NoWelcome
 ```
 
 Accept the consent prompt. The grant is tenant-wide and lands on the enterprise app; partner connections get the scopes afterwards without any prompt.
